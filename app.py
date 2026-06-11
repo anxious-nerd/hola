@@ -3,7 +3,7 @@ import streamlit as st
 import pymongo
 from pymongo import MongoClient
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 # Cargar variables de entorno (para credenciales de MongoDB)
 #load_dotenv()
