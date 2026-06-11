@@ -6,11 +6,11 @@ import os
 from dotenv import load_dotenv
 
 # Cargar variables de entorno (para credenciales de MongoDB)
-load_dotenv()
+#load_dotenv()
 
 def connect_to_mongodb():
     """Conectar a MongoDB Atlas usando la cadena de conexión"""
-    connection_string = os.getenv("MONGODB_CONNECTION_STRING")
+    connection_string = st.secrets["MONGODB_CONNECTION_STRING"]
     if not connection_string:
         st.error("Error: No se encontró la variable de entorno MONGODB_CONNECTION_STRING")
         return None
